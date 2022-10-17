@@ -122,6 +122,9 @@ header .navbar ul li a:hover {
   justify-content: center;
   padding: 0 15rem;
   background-image: url(./img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .home h3 {
