@@ -16,7 +16,7 @@ html {
 }
 body {
   overflow-x: hidden;
-  background: #111;
+
   padding-left: 35rem;
 }
 section {
@@ -25,7 +25,7 @@ section {
 }
 .btn {
   padding: 0.7rem 3rem;
-  background-color: #333;
+  background-color: rgb(54, 54, 50);
   color: #eee;
   cursor: pointer;
   margin-top: 1rem;
@@ -77,11 +77,11 @@ header .user h3.name {
   font-size: 2rem;
   color: #eee;
 }
-header.user .span-p {
-  font-size: 1rem;
+header .user .span-p {
+  font-size: 1.6rem;
   margin: 10px;
   padding: 5px;
-  color: hsl(60, 11%, 96%);
+  color: hsl(57, 65%, 50%);
 }
 header .navbar {
   width: 100%;
@@ -150,9 +150,10 @@ header .navbar ul li a:hover {
   padding: 1rem 0;
 }
 .about .row .info {
-  flex: 1 1 48rem;
-  padding: 2rem 1rem;
-  padding-left: 6rem;
+  padding: 2rem 0.6rem;
+  padding-left: 4rem;
+  margin-bottom: 120px;
+
 }
 .about .row .info h3 {
   font-size: 2rem;
@@ -186,6 +187,36 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   color: rgb(253, 253, 239);
 }
+/*socials*/
+.socials {
+  display: block;
+  width: 5rem;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  
+ 
+}
+.icons {
+  display: block;
+  width: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+  margin-top: 100px;
+ 
+}
+.socials .icons a{
+color: rgb(255, 0, 0);
+
+
+}
+
+.s-icons:hover {
+  color: rgb(13, 233, 13);
+  transition: all 0.5s ease-in-out;
+}
+
 .education .box-container {
   display: flex;
   align-items: center;
@@ -236,42 +267,38 @@ header .navbar ul li a:hover {
   align-items: center;
   justify-content: space-around;
 }
-.portfolio .box-container .box1,.box2 , .box3{
+.portfolio .box-container .box1,
+.box2,
+.box3 {
   width: 300px;
-  height: 400px;
+  height: 300px;
   margin: 10px;
   box-shadow: 5px 5px 20px rgb(242, 241, 238);
+  background-image: url(./img/net.png);
+  background-size: contain;
+  background-repeat: ;
   border-radius: 15px;
 }
-.box1{
-  background-image: url(./img/net.png);
-  background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
-height: 100%
 
+.box-btn {
+  background-color: green;
+  font-size: 16px;
+  margin-top: 160px;
+  border-radius: 5px;
+  width: 60%;
+  height: 20px;
+  margin-left: 60px;
+  height: 20px;
+  color: rgb(254, 254, 251);
+  text-transform: capitalize;
+  transition: all ease-in-out;
 }
-.box-btn{
-background-color: green;
-font-size: 16px;
-margin-top: 270px;
-border-radius: 5px;
-width: 60%;
-height: 20px;
-margin-left: 60px;
-height: 20px;
-color: rgb(254, 254, 251);
-text-transform: capitalize;
-transition: all ease-in-out;
-}
-.box-btn a:hover{
+.box-btn a:hover {
   color: yellow;
 }
-.box-btn a{
-color: white;
-font-size: 20px;
-
-
+.box-btn a {
+  color: white;
+  font-size: 20px;
 }
 
 .portfolio .box-container .box img {
@@ -301,6 +328,7 @@ hr {
   margin-left: 20px;
   margin-right: 20px;
 }
+/************************************************form*/
 .contact .row {
   display: flex;
   align-items: center;
@@ -848,7 +876,6 @@ html::-webkit-scrollbar-thumb {
 }
 body {
   overflow-x: hidden;
-  background: #111;
   padding-left: 35rem;
 }
 section {
@@ -1014,6 +1041,8 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   color: rgb(253, 253, 239);
 }
+
+
 .education .box-container {
   display: flex;
   align-items: center;
